@@ -14,8 +14,7 @@ Example: ['mont', 'y py', 'thon', 's fl', 'ying', ' cir', 'cus']
 
 from collections import OrderedDict
 def no_duplicates(a_string):
-    res= "".join(set(a_string));
-    return ''.join(sorted(res));
+    return  ''.join(sorted(set(a_string)));
 print("***sorted and no duplicates:***")
 print(no_duplicates("monty pythons flying circus"));
 print("\n")

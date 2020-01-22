@@ -92,13 +92,10 @@ def states_capitals_string():
 
 
 states_capitals_string();
+x = {l: k for k, l in STATES_CAPITALS.items()}
 
 def get_state(capital):
-   my_list=[];
-   for key,value in STATES_CAPITALS.items():
-       if(value==capital):
-        my_list.append(key);
-   return my_list;
+    return x[capital]
 
 print(get_state("Madison"));
 
